@@ -311,7 +311,7 @@
       transform: translateX(3px);
     }
 
-    .demo-label {
+    .status-label {
       display: inline-flex;
       align-items: center;
       gap: 0.45rem;
@@ -325,7 +325,7 @@
       letter-spacing: 0.02em;
     }
 
-    .demo-label::before {
+    .status-label::before {
       width: 7px;
       height: 7px;
       content: "";
@@ -1887,7 +1887,7 @@
             >
 
             <div class="room-visual-content">
-              <span class="demo-label">Actual guest room</span>
+              <span class="status-label">Actual guest room</span>
               <h3>Simple, Clean, Air-Conditioned.</h3>
               <p>
                 A real look at one of JD's twin-bed rooms — air conditioning,
@@ -1898,13 +1898,13 @@
 
           <div class="room-panel">
             <div>
-              <span class="demo-label">Room inventory to confirm</span>
+              <span class="status-label">Room inventory to confirm</span>
 
               <h3 style="margin-top: 1.2rem;">What guests should be able to compare</h3>
 
               <p>
                 Room categories, occupancy, beds, bathrooms, inclusions and current
-                rates were not supplied, so this demo does not invent them.
+                rates were not supplied, so unconfirmed details are not listed.
               </p>
 
               <ul class="fact-list">
@@ -1984,8 +1984,7 @@
           <div class="detail-note">
             <strong>Before publishing this section:</strong> confirm the exact
             shoreline and water-entry arrangement, depth/access conditions, rinse
-            areas, gear storage, local partners and safety procedures. The demo
-            intentionally makes no unsupported facility claims.
+            areas, gear storage, local partners and safety procedures before these details are published.
           </div>
 
           <div style="margin-top:1.5rem;">
@@ -2052,7 +2051,7 @@
             <span>Supplied business information</span>
           </div>
 
-          <span class="demo-label">Confirm live rating &amp; review attribution before publish</span>
+          <span class="status-label">Confirm live rating &amp; review attribution before publish</span>
         </div>
 
         <div class="review-grid">
@@ -2447,9 +2446,7 @@
           <div class="map-pin" aria-hidden="true"><span>JD</span></div>
 
           <div class="location-note">
-            Map-style placeholder for the client demo. The published site should
-            embed or link the verified property map location and include confirmed
-            arrival guidance.
+            Map reference for JD Beach Front Hotel. Use the Get Directions button for the verified property search.
           </div>
         </div>
       </div>
@@ -2783,14 +2780,11 @@
             </button>
 
             <p class="form-note">
-              Client demo: this form currently has no booking backend and does not
-              transmit guest information. Connect it to JD’s confirmed reservation
-              workflow before publishing.
+              This form is not yet connected to a booking system and does not transmit guest information. Please call or message JD directly for reservations.
             </p>
 
             <div id="form-message" class="form-message" role="status" aria-live="polite">
-              Demo only — your inquiry has not been sent. The form UI is ready to
-              connect to JD Beach Front Hotel’s confirmed booking or messaging workflow.
+              Your inquiry has not been sent. Please call or message JD Beach Front Hotel directly to check availability.
             </div>
           </div>
         </form>
