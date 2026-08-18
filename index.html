@@ -1,0 +1,3000 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Beachfront Hotel in Padre Burgos, Southern Leyte | JD Beach Front Hotel</title>
+  <meta
+    name="description"
+    content="Stay by the water at JD Beach Front Hotel in Padre Burgos, Southern Leyte, with comfortable accommodation, Wi-Fi and food available. Check your dates directly."
+  >
+  <meta name="theme-color" content="#123746">
+  <link rel="icon" type="image/png" href="images/jds-logo.png">
+
+  <style>
+    :root {
+      --ocean: #0b5563;
+      --ocean-dark: #123746;
+      --ocean-deep: #092b35;
+      --sand: #e8ddc8;
+      --sand-light: #f0e9dd;
+      --shell: #f8f6f1;
+      --white: #ffffff;
+      --coral: #e87555;
+      --coral-dark: #cc593c;
+      --ink: #17313a;
+      --muted: #66767a;
+      --line: #d9ddd8;
+      --success: #176842;
+      --danger: #a43a32;
+
+      --radius: 12px;
+      --radius-sm: 9px;
+      --shadow-soft: 0 16px 40px rgba(18, 55, 70, 0.09);
+
+      --container: 1180px;
+      --section-space: clamp(4.5rem, 8vw, 7.5rem);
+
+      --font-display: Georgia, "Times New Roman", serif;
+      --font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--shell);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid rgba(232, 117, 85, 0.55);
+      outline-offset: 3px;
+    }
+
+    section[id] {
+      scroll-margin-top: 96px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 9999;
+      padding: 0.75rem 1rem;
+      color: var(--white);
+      background: var(--ocean-dark);
+      border-radius: var(--radius-sm);
+      transform: translateY(-150%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .container {
+      width: min(calc(100% - 2.5rem), var(--container));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding-block: var(--section-space);
+    }
+
+    .section--white {
+      background: var(--white);
+    }
+
+    .section--sand {
+      background: var(--sand-light);
+    }
+
+    .section--dark {
+      color: var(--white);
+      background: var(--ocean-dark);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin: 0 0 1rem;
+      color: var(--ocean);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 28px;
+      height: 2px;
+      content: "";
+      background: var(--coral);
+    }
+
+    .section--dark .eyebrow {
+      color: #cce4e8;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--ocean-dark);
+      font-family: var(--font-display);
+      font-weight: 500;
+      line-height: 1.08;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 1.4rem;
+      font-size: clamp(2.8rem, 6vw, 5.8rem);
+      letter-spacing: -0.035em;
+    }
+
+    h2 {
+      margin-bottom: 1.15rem;
+      font-size: clamp(2.3rem, 4.5vw, 4rem);
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      margin-bottom: 0.75rem;
+      font-size: clamp(1.45rem, 2.5vw, 2rem);
+    }
+
+    .section--dark h2,
+    .section--dark h3 {
+      color: var(--white);
+    }
+
+    .lead {
+      max-width: 720px;
+      color: #52676d;
+      font-size: clamp(1.04rem, 1.8vw, 1.18rem);
+    }
+
+    .section--dark .lead {
+      color: #d5e2e5;
+    }
+
+    .section-heading {
+      max-width: 790px;
+      margin-bottom: clamp(2.25rem, 5vw, 4rem);
+    }
+
+    .section-heading--center {
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .section-heading--center .lead {
+      margin-inline: auto;
+    }
+
+    .section-heading--center .eyebrow {
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      min-height: 50px;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.82rem 1.2rem;
+      border: 1px solid transparent;
+      border-radius: var(--radius-sm);
+      font-weight: 800;
+      line-height: 1.1;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition:
+        color 160ms ease,
+        background-color 160ms ease,
+        border-color 160ms ease,
+        transform 160ms ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn--primary {
+      color: #20130f;
+      background: var(--coral);
+      border-color: var(--coral);
+    }
+
+    .btn--primary:hover {
+      color: var(--white);
+      background: var(--coral-dark);
+      border-color: var(--coral-dark);
+    }
+
+    .btn--secondary {
+      color: var(--ocean-dark);
+      background: transparent;
+      border-color: rgba(18, 55, 70, 0.3);
+    }
+
+    .btn--secondary:hover {
+      border-color: var(--ocean-dark);
+    }
+
+    .btn--light {
+      color: var(--white);
+      border-color: rgba(255, 255, 255, 0.45);
+    }
+
+    .btn--light:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--white);
+    }
+
+    .btn--full {
+      width: 100%;
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: var(--ocean);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .text-link::after {
+      content: "→";
+      transition: transform 160ms ease;
+    }
+
+    .text-link:hover::after {
+      transform: translateX(3px);
+    }
+
+    .demo-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.4rem 0.65rem;
+      color: #6c503b;
+      background: #fff3df;
+      border: 1px solid #ecd7b7;
+      border-radius: 999px;
+      font-size: 0.73rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .demo-label::before {
+      width: 7px;
+      height: 7px;
+      content: "";
+      background: #d98b38;
+      border-radius: 50%;
+    }
+
+    /* Header */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(248, 246, 241, 0.97);
+      border-bottom: 1px solid rgba(18, 55, 70, 0.08);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-wrap {
+      display: flex;
+      min-height: 88px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 68px;
+      height: 68px;
+      flex: 0 0 auto;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+
+    .brand-copy strong {
+      color: var(--ocean-dark);
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      font-weight: 600;
+    }
+
+    .brand-copy span {
+      margin-top: 0.22rem;
+      color: var(--muted);
+      font-size: 0.66rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .desktop-nav > a:not(.btn) {
+      position: relative;
+      padding-block: 0.5rem;
+      color: #38515a;
+      font-size: 0.88rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .desktop-nav > a:not(.btn)::after {
+      position: absolute;
+      right: 0;
+      bottom: 0.15rem;
+      left: 0;
+      height: 2px;
+      content: "";
+      background: var(--coral);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 160ms ease;
+    }
+
+    .desktop-nav > a:not(.btn):hover::after {
+      transform: scaleX(1);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 48px;
+      height: 48px;
+      place-items: center;
+      padding: 0;
+      color: var(--ocean-dark);
+      background: transparent;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+    }
+
+    .menu-toggle span,
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      transition: transform 180ms ease, opacity 180ms ease;
+    }
+
+    .menu-toggle span {
+      position: relative;
+    }
+
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      position: absolute;
+      left: 0;
+      content: "";
+    }
+
+    .menu-toggle span::before {
+      top: -6px;
+    }
+
+    .menu-toggle span::after {
+      top: 6px;
+    }
+
+    .menu-toggle[aria-expanded="true"] span {
+      background: transparent;
+    }
+
+    .menu-toggle[aria-expanded="true"] span::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"] span::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+
+    /* Hero */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(4rem, 8vw, 7rem) 0 4rem;
+      background: var(--shell);
+    }
+
+    .hero::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 29%;
+      height: 100%;
+      content: "";
+      background: var(--sand-light);
+      border-left: 1px solid rgba(18, 55, 70, 0.06);
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      align-items: center;
+      gap: clamp(3rem, 6vw, 6rem);
+      grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-copy .lead {
+      max-width: 680px;
+      margin-bottom: 1.8rem;
+      font-size: clamp(1.08rem, 2vw, 1.24rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .contact-pair {
+      display: inline-flex;
+      gap: 0.5rem;
+    }
+
+    .trust-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem 1rem;
+      align-items: center;
+      color: #50656b;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .trust-line span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .trust-line span::before {
+      width: 5px;
+      height: 5px;
+      content: "";
+      background: var(--coral);
+      border-radius: 50%;
+    }
+
+    .rating-note {
+      margin-top: 0.65rem;
+      color: #7d8584;
+      font-size: 0.76rem;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .photo-art {
+      position: relative;
+      min-height: 600px;
+      overflow: hidden;
+      background: #dce8e7;
+      border-radius: 160px 12px 12px 12px;
+      box-shadow: var(--shadow-soft);
+      isolation: isolate;
+    }
+
+    .photo-art svg,
+    .photo-art img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .photo-caption {
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      z-index: 3;
+      padding: 0.85rem 1rem;
+      color: #2c4b51;
+      background: rgba(248, 246, 241, 0.94);
+      border: 1px solid rgba(18, 55, 70, 0.1);
+      border-radius: 10px;
+      font-size: 0.76rem;
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
+    .hero-location-card {
+      position: absolute;
+      top: 11%;
+      left: -2rem;
+      z-index: 4;
+      max-width: 210px;
+      padding: 1rem;
+      background: var(--white);
+      border: 1px solid rgba(18, 55, 70, 0.1);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-location-card strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: var(--ocean-dark);
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+    }
+
+    .hero-location-card span {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    /* Reasons */
+
+    .reason-grid {
+      display: grid;
+      gap: 1px;
+      overflow: hidden;
+      background: #d6ddda;
+      border: 1px solid #d6ddda;
+      border-radius: var(--radius);
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .reason {
+      min-height: 260px;
+      padding: 2rem;
+      background: var(--white);
+    }
+
+    .reason-number {
+      display: block;
+      margin-bottom: 2.6rem;
+      color: var(--coral);
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+    }
+
+    .reason p {
+      margin: 0;
+      color: #627176;
+      font-size: 0.93rem;
+    }
+
+    /* Rooms */
+
+    .rooms-layout {
+      display: grid;
+      align-items: stretch;
+      gap: 1.5rem;
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+
+    .room-visual {
+      position: relative;
+      min-height: 520px;
+      overflow: hidden;
+      color: var(--white);
+      background: var(--ocean);
+      border-radius: var(--radius);
+    }
+
+    .room-visual-art {
+      position: absolute;
+      inset: 0;
+    }
+
+    .room-visual::after {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      content: "";
+      background: linear-gradient(180deg, rgba(11, 34, 42, 0) 45%, rgba(9, 27, 33, 0.88) 100%);
+      pointer-events: none;
+    }
+
+    .room-visual-content {
+      position: absolute;
+      right: 2rem;
+      bottom: 2rem;
+      left: 2rem;
+      z-index: 2;
+      max-width: 470px;
+    }
+
+    .room-visual-content h3 {
+      margin-bottom: 0.55rem;
+      color: var(--white);
+      font-size: clamp(2rem, 4vw, 3.1rem);
+    }
+
+    .room-visual-content p {
+      margin-bottom: 1rem;
+      color: #d5e6e8;
+    }
+
+    .room-panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: clamp(2rem, 4vw, 3rem);
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .fact-list {
+      display: grid;
+      gap: 0;
+      margin: 1.8rem 0 2rem;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line);
+    }
+
+    .fact-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .fact-list strong {
+      color: var(--ocean-dark);
+      font-size: 0.9rem;
+    }
+
+    .fact-list span {
+      color: #7a8585;
+      font-size: 0.86rem;
+      text-align: right;
+    }
+
+    .confirmed-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .amenity {
+      padding: 0.42rem 0.68rem;
+      color: var(--ocean);
+      background: #edf5f4;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    /* Reef */
+
+    .reef-grid {
+      display: grid;
+      align-items: center;
+      gap: clamp(3rem, 7vw, 7rem);
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    }
+
+    .reef-visual {
+      position: relative;
+      min-height: 580px;
+      overflow: hidden;
+      background: #082f3b;
+      border-radius: 12px 140px 12px 12px;
+    }
+
+    .reef-visual svg,
+    .reef-visual img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .reef-copy .lead {
+      margin-bottom: 1.75rem;
+    }
+
+    .detail-note {
+      margin-top: 1.8rem;
+      padding: 1.15rem 1.25rem;
+      color: #465a60;
+      background: #f2eee5;
+      border-left: 4px solid var(--coral);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.88rem;
+    }
+
+    /* Reviews */
+
+    .review-summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      padding: 1.4rem 1.6rem;
+      background: var(--sand-light);
+      border-radius: var(--radius);
+    }
+
+    .review-summary strong {
+      display: block;
+      color: var(--ocean-dark);
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    .review-summary span {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .review-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .review-card {
+      display: flex;
+      min-height: 310px;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .quote-mark {
+      color: var(--coral);
+      font-family: Georgia, serif;
+      font-size: 4rem;
+      line-height: 0.6;
+    }
+
+    blockquote {
+      margin: 1.1rem 0 2rem;
+      color: #354d54;
+      font-family: var(--font-display);
+      font-size: 1.28rem;
+      line-height: 1.45;
+    }
+
+    .review-source {
+      color: var(--muted);
+      font-size: 0.76rem;
+    }
+
+    /* Food */
+
+    .food-layout {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .food-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    .food-visual {
+      position: relative;
+      min-height: 500px;
+      overflow: hidden;
+      background: #d8c9a7;
+      border-radius: var(--radius);
+    }
+
+    .food-visual svg,
+    .food-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .pending-grid {
+      display: grid;
+      gap: 0.55rem;
+      margin: 1.5rem 0 0;
+      padding: 0;
+      list-style: none;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pending-grid li {
+      padding: 0.8rem 0;
+      color: #66767a;
+      border-top: 1px solid #d9ddd8;
+      font-size: 0.84rem;
+    }
+
+    .pending-grid strong {
+      display: block;
+      margin-bottom: 0.15rem;
+      color: var(--ocean-dark);
+    }
+
+    /* Gallery */
+
+    .gallery-grid {
+      display: grid;
+      gap: 0.8rem;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      grid-auto-rows: 260px;
+      grid-auto-flow: dense;
+    }
+
+    .gallery-tile {
+      position: relative;
+      overflow: hidden;
+      background: var(--ocean);
+      border-radius: var(--radius);
+    }
+
+    .gallery-tile--wide {
+      grid-column: span 2;
+    }
+
+    .gallery-tile--tall {
+      grid-row: span 2;
+    }
+
+    .gallery-tile svg,
+    .gallery-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-label {
+      position: absolute;
+      right: 0.75rem;
+      bottom: 0.75rem;
+      left: 0.75rem;
+      padding: 0.6rem 0.75rem;
+      color: #31484e;
+      background: rgba(248, 246, 241, 0.94);
+      border-radius: 8px;
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    /* Location */
+
+    .location-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    .location-card {
+      padding: clamp(2rem, 5vw, 3.5rem);
+      background: var(--ocean-dark);
+      border-radius: var(--radius);
+    }
+
+    .location-card h2 {
+      color: var(--white);
+    }
+
+    .location-card p {
+      color: #d5e2e5;
+    }
+
+    address {
+      margin: 2rem 0;
+      color: var(--white);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.7;
+    }
+
+    .location-art {
+      position: relative;
+      min-height: 510px;
+      overflow: hidden;
+      background: var(--sand);
+      border-radius: var(--radius);
+    }
+
+    .map-lines {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .map-pin {
+      position: absolute;
+      top: 45%;
+      left: 52%;
+      display: grid;
+      width: 58px;
+      height: 58px;
+      place-items: center;
+      color: var(--white);
+      background: var(--coral);
+      border: 7px solid rgba(255, 255, 255, 0.7);
+      border-radius: 50% 50% 50% 0;
+      box-shadow: 0 8px 30px rgba(18, 55, 70, 0.18);
+      transform: rotate(-45deg);
+    }
+
+    .map-pin span {
+      font-weight: 900;
+      transform: rotate(45deg);
+    }
+
+    .location-note {
+      position: absolute;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      left: 1.25rem;
+      padding: 1rem;
+      color: #40565b;
+      background: rgba(248, 246, 241, 0.94);
+      border-radius: 10px;
+      font-size: 0.82rem;
+    }
+
+    /* Process */
+
+    .process-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .process-step {
+      padding: 1.5rem 1.35rem;
+      border-top: 3px solid var(--ocean);
+      background: var(--white);
+    }
+
+    .process-step span {
+      display: block;
+      margin-bottom: 1.1rem;
+      color: var(--coral);
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+    }
+
+    .process-step p {
+      margin: 0;
+      color: #68777a;
+      font-size: 0.9rem;
+    }
+
+    /* FAQ */
+
+    .faq-wrap {
+      max-width: 900px;
+      margin-inline: auto;
+    }
+
+    .faq-item {
+      border-top: 1px solid #d9ddd8;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid #d9ddd8;
+    }
+
+    .faq-item summary {
+      position: relative;
+      padding: 1.3rem 3rem 1.3rem 0;
+      color: var(--ocean-dark);
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 600;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      position: absolute;
+      top: 50%;
+      right: 0.3rem;
+      width: 26px;
+      height: 26px;
+      content: "+";
+      color: var(--ocean);
+      font-family: var(--font-body);
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      border: 1px solid #c8d0ce;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+
+    .faq-item[open] summary::after {
+      content: "–";
+    }
+
+    .faq-answer {
+      max-width: 760px;
+      padding: 0 0 1.35rem;
+      color: #66767a;
+    }
+
+    .faq-answer p:last-child {
+      margin-bottom: 0;
+    }
+
+    .pending-inline {
+      display: inline;
+      color: #8a613b;
+      font-size: 0.88rem;
+      font-weight: 750;
+    }
+
+    /* Availability */
+
+    .availability-grid {
+      display: grid;
+      align-items: start;
+      gap: clamp(3rem, 7vw, 6rem);
+      grid-template-columns: 0.85fr 1.15fr;
+    }
+
+    .availability-copy {
+      position: sticky;
+      top: 110px;
+    }
+
+    .availability-copy h2 {
+      max-width: 510px;
+    }
+
+    .availability-contact {
+      display: grid;
+      gap: 0.7rem;
+      margin-top: 2rem;
+    }
+
+    .availability-contact a {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      gap: 0.7rem;
+      color: #dbe8ea;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .form-shell {
+      padding: clamp(1.4rem, 4vw, 2.5rem);
+      color: var(--ink);
+      background: var(--shell);
+      border-radius: var(--radius);
+    }
+
+    .form-shell h3 {
+      margin-bottom: 0.35rem;
+    }
+
+    .form-intro {
+      margin-bottom: 1.6rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .form-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .field {
+      display: grid;
+      gap: 0.4rem;
+    }
+
+    .field--full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--ocean-dark);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 50px;
+      padding: 0.75rem 0.82rem;
+      color: var(--ink);
+      background: var(--white);
+      border: 1px solid #cbd3d1;
+      border-radius: 8px;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #909a9a;
+    }
+
+    .field-help {
+      color: #7b8788;
+      font-size: 0.72rem;
+    }
+
+    .field-error {
+      display: none;
+      color: var(--danger);
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .field.has-error input,
+    .field.has-error select,
+    .field.has-error textarea {
+      border-color: var(--danger);
+    }
+
+    .field.has-error .field-error {
+      display: block;
+    }
+
+    .form-footer {
+      margin-top: 1.25rem;
+    }
+
+    .form-note {
+      margin: 0.8rem 0 0;
+      color: #778384;
+      font-size: 0.72rem;
+      line-height: 1.5;
+    }
+
+    .form-message {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      color: #6f522e;
+      background: #fff1d8;
+      border: 1px solid #ead1a8;
+      border-radius: 8px;
+      font-size: 0.84rem;
+    }
+
+    .form-message.show {
+      display: block;
+    }
+
+    /* Footer */
+
+    .site-footer {
+      padding: 4rem 0 6rem;
+      color: #cddcdf;
+      background: var(--ocean-deep);
+    }
+
+    .footer-grid {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1.5fr 0.8fr 0.9fr 0.9fr;
+    }
+
+    .footer-brand {
+      max-width: 330px;
+    }
+
+    .footer-brand h3 {
+      color: var(--white);
+      font-size: 1.8rem;
+    }
+
+    .footer-brand p {
+      color: #aac0c5;
+      font-size: 0.9rem;
+    }
+
+    .footer-title {
+      margin-bottom: 0.9rem;
+      color: var(--white);
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .footer-links a {
+      width: fit-content;
+      color: #b9ccd0;
+      font-size: 0.86rem;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+      padding-top: 1.4rem;
+      color: #829da3;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.75rem;
+    }
+
+    .creator {
+      color: #e8ddc8;
+      font-weight: 800;
+    }
+
+    /* Mobile sticky CTA */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 1060px) {
+      .desktop-nav a:nth-child(4),
+      .desktop-nav a:nth-child(5),
+      .desktop-nav a:nth-child(6) {
+        display: none;
+      }
+
+      .hero-grid {
+        gap: 3rem;
+        grid-template-columns: 1fr 0.9fr;
+      }
+
+      .reason-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .review-card {
+        min-height: auto;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 820px) {
+      body {
+        padding-bottom: 74px;
+      }
+
+      .desktop-nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: grid;
+      }
+
+      .mobile-menu {
+        position: fixed;
+        inset: 79px 0 0;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 1.25rem 2rem;
+        background: var(--shell);
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-8px);
+        transition:
+          opacity 160ms ease,
+          transform 160ms ease,
+          visibility 160ms ease;
+      }
+
+      .mobile-menu.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .mobile-menu a {
+        padding: 1rem 0;
+        color: var(--ocean-dark);
+        border-bottom: 1px solid var(--line);
+        font-family: var(--font-display);
+        font-size: 1.35rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .mobile-menu .btn {
+        margin-top: 1.5rem;
+        border-bottom: 0;
+        font-family: var(--font-body);
+        font-size: 1rem;
+      }
+
+      .hero {
+        padding-top: 3.5rem;
+      }
+
+      .hero::before {
+        display: none;
+      }
+
+      .hero-grid,
+      .rooms-layout,
+      .reef-grid,
+      .food-layout,
+      .location-grid,
+      .availability-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy .eyebrow {
+        max-width: 300px;
+      }
+
+      .hero-visual {
+        margin-top: 0.5rem;
+      }
+
+      .photo-art {
+        min-height: 520px;
+        border-radius: 100px 12px 12px 12px;
+      }
+
+      .hero-location-card {
+        top: -1.25rem;
+        left: 1rem;
+      }
+
+      .rooms-layout {
+        gap: 1rem;
+      }
+
+      .room-visual {
+        min-height: 430px;
+      }
+
+      .room-panel {
+        order: -1;
+      }
+
+      .reef-visual {
+        min-height: 460px;
+        border-radius: 12px 90px 12px 12px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: 220px;
+      }
+
+      .location-art {
+        min-height: 420px;
+      }
+
+      .availability-copy {
+        position: static;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1100;
+        display: grid;
+        gap: 0.5rem;
+        padding: 0.55rem max(0.7rem, env(safe-area-inset-right))
+          calc(0.55rem + env(safe-area-inset-bottom))
+          max(0.7rem, env(safe-area-inset-left));
+        background: rgba(248, 246, 241, 0.98);
+        border-top: 1px solid #d7dcda;
+        grid-template-columns: 1fr auto;
+        backdrop-filter: blur(12px);
+      }
+
+      .mobile-cta .btn {
+        min-height: 52px;
+      }
+
+      .mobile-call {
+        display: grid;
+        width: 52px;
+        min-height: 52px;
+        place-items: center;
+        color: var(--ocean-dark);
+        border: 1px solid #cdd5d3;
+        border-radius: 9px;
+        font-size: 1.2rem;
+        text-decoration: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: min(calc(100% - 1.5rem), var(--container));
+      }
+
+      .section {
+        padding-block: 4.6rem;
+      }
+
+      h1 {
+        font-size: clamp(2.7rem, 13vw, 4rem);
+      }
+
+      h2 {
+        font-size: clamp(2.15rem, 10vw, 3rem);
+      }
+
+      .brand-copy span {
+        display: none;
+      }
+
+      .brand-logo {
+        width: 58px;
+        height: 58px;
+      }
+
+      .hero {
+        padding-top: 2.75rem;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .contact-pair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .photo-art {
+        min-height: 430px;
+        border-radius: 70px 10px 10px;
+      }
+
+      .hero-location-card {
+        max-width: 180px;
+      }
+
+      .reason-grid,
+      .process-grid,
+      .pending-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .reason {
+        min-height: 0;
+      }
+
+      .reason-number {
+        margin-bottom: 1.5rem;
+      }
+
+      .room-visual {
+        min-height: 390px;
+      }
+
+      .room-visual-content {
+        right: 1.25rem;
+        bottom: 1.25rem;
+        left: 1.25rem;
+      }
+
+      .review-summary {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .food-copy {
+        padding-inline: 0;
+      }
+
+      .food-visual {
+        min-height: 380px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 260px;
+      }
+
+      .gallery-tile--wide,
+      .gallery-tile--tall {
+        grid-column: auto;
+        grid-row: auto;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .field--full {
+        grid-column: auto;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "JD Beach Front Hotel",
+    "telephone": "+63 917 723 1620",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sta. Sofia",
+      "addressLocality": "Padre Burgos",
+      "addressRegion": "Southern Leyte",
+      "postalCode": "6602",
+      "addressCountry": "PH"
+    },
+    "sameAs": [
+      "https://www.facebook.com/jdbeachfronthotel/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="JD Beach Front Hotel home">
+        <img
+          class="brand-logo"
+          src="images/jds-logo.png"
+          alt="JD's Beach Front Hotel logo"
+          width="68"
+          height="68"
+        >
+        <span class="brand-copy">
+          <strong>JD Beach Front Hotel</strong>
+          <span>Padre Burgos · Southern Leyte</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#rooms">Rooms &amp; Rates</a>
+        <a href="#reef">Freediving &amp; The Reef</a>
+        <a href="#food">Food &amp; Breakfast</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#getting-here">Getting Here</a>
+        <a href="#faqs">FAQs</a>
+        <a class="btn btn--primary" href="#availability">Check Availability</a>
+      </nav>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">
+      <a href="#rooms">Rooms &amp; Rates</a>
+      <a href="#reef">Beachfront &amp; Reef</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#getting-here">Getting Here</a>
+      <a href="#faqs">FAQs</a>
+      <a class="btn btn--primary" href="#availability">Check Availability</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Beachfront Accommodation in Padre Burgos, Southern Leyte</p>
+
+          <h1 id="hero-title">Beachfront Stays in Padre Burgos, Southern Leyte</h1>
+
+          <p class="lead">
+            Stay by the water at JD Beach Front Hotel in Sta. Sofia, Padre Burgos.
+            Enjoy clean, comfortable accommodation with air conditioning, Wi-Fi,
+            food service, scenic surroundings, and a beachfront setting that’s
+            especially appealing for travelers coming to experience Sogod Bay.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#availability">Check Availability</a>
+
+            <div class="contact-pair" aria-label="Direct contact options">
+              <a class="btn btn--secondary" href="tel:+639177231620">Call</a>
+              <a class="btn btn--secondary" href="sms:+639177231620">Message</a>
+            </div>
+          </div>
+
+          <div class="trust-line" aria-label="Stay highlights">
+            <span>4.6 Google rating*</span>
+            <span>Beachfront location</span>
+            <span>Wi-Fi</span>
+            <span>Food available</span>
+          </div>
+
+          <p class="rating-note">
+            *Rating shown from the supplied business brief. Confirm the current
+            Google rating before publishing.
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-label="Temporary beachfront visual">
+          <div class="hero-location-card">
+            <strong>Sta. Sofia</strong>
+            <span>Padre Burgos, Southern Leyte · Philippines 6602</span>
+          </div>
+
+          <div class="photo-art">
+            <img
+              src="images/diver-with-turtle-blue.jpg"
+              alt="A scuba diver swimming beneath a sea turtle in open blue water off Padre Burgos"
+              loading="eager"
+            >
+
+            <div class="photo-caption">
+              A green sea turtle and diver in the waters off Padre Burgos —
+              the marine sanctuary right in front of JD.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY JD -->
+    <section class="section section--white" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why stay at JD?</p>
+          <h2 id="why-title">A Comfortable Base for Your Padre Burgos Stay</h2>
+          <p class="lead">
+            You don’t need a sprawling resort to enjoy Padre Burgos. JD offers a
+            more straightforward beachfront stay built around comfortable
+            accommodation, the water, and the practical things that make a trip easier.
+          </p>
+        </div>
+
+        <div class="reason-grid">
+          <article class="reason">
+            <span class="reason-number">01 · WATER</span>
+            <h3>Stay Right by the Water</h3>
+            <p>
+              JD’s beachfront setting puts the Sogod Bay marine environment at the
+              center of the experience.
+            </p>
+          </article>
+
+          <article class="reason">
+            <span class="reason-number">02 · COMFORT</span>
+            <h3>Rooms for Unwinding</h3>
+            <p>
+              Supplied guest feedback describes the accommodation as clean, cozy,
+              comfortable, air-conditioned, and relaxing.
+            </p>
+          </article>
+
+          <article class="reason">
+            <span class="reason-number">03 · SEA</span>
+            <h3>Relevant for Freedivers</h3>
+            <p>
+              JD is positioned as a freediver-friendly beachfront hotel, with a
+              marine sanctuary directly in front of the property.
+            </p>
+          </article>
+
+          <article class="reason">
+            <span class="reason-number">04 · EASY STAY</span>
+            <h3>Food &amp; Wi-Fi Available</h3>
+            <p>
+              Guest feedback mentions breakfast, food, service and Wi-Fi—practical
+              conveniences for an easier coastal stay.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section id="rooms" class="section section--sand" aria-labelledby="rooms-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Rooms &amp; Rates</p>
+          <h2 id="rooms-title">Comfortable Accommodation Beside the Water</h2>
+          <p class="lead">
+            Stay beside the water in Padre Burgos with the essentials for a
+            comfortable trip. Guest feedback specifically mentions clean and cozy
+            rooms, air conditioning, Wi-Fi, breakfast and scenic views.
+          </p>
+        </div>
+
+        <div class="rooms-layout">
+          <div class="room-visual">
+            <img
+              class="room-visual-art"
+              src="images/room-twin-beds.jpg"
+              alt="A twin-bed guest room at JD Beach Front Hotel with fresh linens, air conditioning and an en-suite bathroom"
+              loading="lazy"
+              style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;"
+            >
+
+            <div class="room-visual-content">
+              <span class="demo-label">Actual guest room</span>
+              <h3>Simple, Clean, Air-Conditioned.</h3>
+              <p>
+                A real look at one of JD's twin-bed rooms — air conditioning,
+                made-up beds and fresh towels included.
+              </p>
+            </div>
+          </div>
+
+          <div class="room-panel">
+            <div>
+              <span class="demo-label">Room inventory to confirm</span>
+
+              <h3 style="margin-top: 1.2rem;">What guests should be able to compare</h3>
+
+              <p>
+                Room categories, occupancy, beds, bathrooms, inclusions and current
+                rates were not supplied, so this demo does not invent them.
+              </p>
+
+              <ul class="fact-list">
+                <li>
+                  <strong>Room types</strong>
+                  <span>Business owner to confirm</span>
+                </li>
+                <li>
+                  <strong>Guest capacity</strong>
+                  <span>Business owner to confirm</span>
+                </li>
+                <li>
+                  <strong>Bed setup</strong>
+                  <span>Business owner to confirm</span>
+                </li>
+                <li>
+                  <strong>Bathroom setup</strong>
+                  <span>Business owner to confirm</span>
+                </li>
+                <li>
+                  <strong>Current rates</strong>
+                  <span>Business owner to confirm</span>
+                </li>
+              </ul>
+
+              <p style="font-weight:800; font-size:.82rem; margin-bottom:.65rem;">
+                CONFIRMED AT PROPERTY LEVEL
+              </p>
+
+              <div class="confirmed-list">
+                <span class="amenity">Wi-Fi</span>
+                <span class="amenity">Food available</span>
+                <span class="amenity">Beachfront setting</span>
+                <span class="amenity">Air conditioning mentioned in guest feedback</span>
+              </div>
+            </div>
+
+            <a class="btn btn--primary btn--full" href="#availability">
+              Check Availability
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REEF -->
+    <section id="reef" class="section section--white" aria-labelledby="reef-title">
+      <div class="container reef-grid">
+        <div class="reef-visual">
+          <img
+            src="images/turtles-and-divers.jpg"
+            alt="Two divers watching two sea turtles feeding on the reef near Padre Burgos"
+            loading="lazy"
+          >
+
+          <div class="photo-caption">
+            Divers and sea turtles sharing the reef just off Padre Burgos —
+            part of the marine sanctuary in front of JD.
+          </div>
+        </div>
+
+        <div class="reef-copy">
+          <p class="eyebrow">Freediving &amp; The Reef</p>
+          <h2 id="reef-title">Let the Water Be Part of the Stay</h2>
+
+          <p class="lead">
+            Coming to Southern Leyte for the water? JD is positioned as a
+            freediver-friendly place to stay, with a marine sanctuary directly in
+            front of the property.
+          </p>
+
+          <p>
+            That makes the marine environment part of the reason to stay here—not
+            something you have to leave the property behind to enjoy.
+          </p>
+
+          <div class="detail-note">
+            <strong>Before publishing this section:</strong> confirm the exact
+            shoreline and water-entry arrangement, depth/access conditions, rinse
+            areas, gear storage, local partners and safety procedures. The demo
+            intentionally makes no unsupported facility claims.
+          </div>
+
+          <div style="margin-top:1.5rem;">
+            <a class="btn btn--secondary" href="#availability">Check Your Dates</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHALE SHARKS & TURTLES -->
+    <section id="whale-sharks" class="section section--white" aria-labelledby="whaleshark-title">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">In-season near Padre Burgos</p>
+          <h2 id="whaleshark-title">Whale Sharks, Turtles &amp; More Water Time</h2>
+          <p class="lead">
+            Sogod Bay is also known for whale shark encounters, alongside the sea
+            turtles and reef life right off JD's shoreline. Guest photography
+            supplied for JD documents these sightings.
+          </p>
+        </div>
+
+        <div class="reason-grid" style="grid-template-columns: repeat(3, 1fr);">
+          <article class="reason" style="padding:0; overflow:hidden; min-height:340px; position:relative;">
+            <img src="images/whaleshark-solo.jpg" alt="A whale shark gliding through open blue water"
+              loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;">
+          </article>
+
+          <article class="reason" style="padding:0; overflow:hidden; min-height:340px; position:relative;">
+            <img src="images/whaleshark-snorkeler.jpg" alt="A snorkeler swimming alongside a whale shark at the surface"
+              loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;">
+          </article>
+
+          <article class="reason" style="padding:0; overflow:hidden; min-height:340px; position:relative;">
+            <img src="images/baby-turtle-hand.jpg" alt="A hatchling sea turtle held gently in a person's hand before release"
+              loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;">
+          </article>
+        </div>
+
+        <div class="detail-note" style="margin-top:2rem;">
+          <strong>Before publishing this section:</strong> confirm whale shark
+          season timing, whether sightings are guaranteed or seasonal, how trips
+          are arranged (JD-organized vs. third-party operator), and any turtle
+          hatchling release program details and schedule.
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section--sand" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Guest feedback</p>
+          <h2 id="reviews-title">What Guests Say About JD</h2>
+          <p class="lead">
+            Supplied feedback highlights cleanliness, comfort, air conditioning,
+            Wi-Fi, breakfast, scenic views, food, service and repeat stays.
+          </p>
+        </div>
+
+        <div class="review-summary">
+          <div>
+            <strong>4.6 Google rating*</strong>
+            <span>Supplied business information</span>
+          </div>
+
+          <span class="demo-label">Confirm live rating &amp; review attribution before publish</span>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div>
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote>
+                Clean room with A/C, Wifi, breakfast and a scenic view.
+              </blockquote>
+            </div>
+            <div class="review-source">Guest feedback supplied in the business brief</div>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote>
+                The accommodation was cozy, clean, and comfortable, offering a
+                relaxing atmosphere perfect for unwinding.
+              </blockquote>
+            </div>
+            <div class="review-source">Guest feedback supplied in the business brief</div>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote>
+                This is about the fourth time we have stayed at JDs, and it was
+                super good again. Joy and her team had it all set up, food was good,
+                service was good...
+              </blockquote>
+            </div>
+            <div class="review-source">
+              Repeat-stay feedback supplied in the business brief
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top:2rem;">
+          <a class="btn btn--primary" href="#availability">Check Availability</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOD -->
+    <section id="food" class="section section--white" aria-labelledby="food-title">
+      <div class="container food-layout">
+        <div class="food-copy">
+          <p class="eyebrow">Food &amp; Breakfast</p>
+          <h2 id="food-title">Food Without Leaving the Stay</h2>
+
+          <p class="lead">
+            Having food available where you stay can make mornings and relaxed days
+            by the water much easier.
+          </p>
+
+          <p>
+            Guest feedback supplied for JD specifically mentions breakfast, good
+            food and good service.
+          </p>
+
+          <ul class="pending-grid">
+            <li>
+              <strong>Breakfast inclusion</strong>
+              To confirm
+            </li>
+            <li>
+              <strong>Menu</strong>
+              To confirm
+            </li>
+            <li>
+              <strong>Service hours</strong>
+              To confirm
+            </li>
+            <li>
+              <strong>Food pricing</strong>
+              To confirm
+            </li>
+          </ul>
+        </div>
+
+        <div class="food-visual">
+          <img
+            src="images/grilled-fish-meal.jpg"
+            alt="A plate of grilled fish and fries served at JD Beach Front Hotel"
+            loading="lazy"
+          >
+
+          <div class="photo-caption">
+            Grilled fish and fries, from JD's own kitchen.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section section--sand" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title">See the Real JD Experience</h2>
+          <p class="lead">
+            A look at the reef, the guest rooms, and the coastline around Padre
+            Burgos — from guest and dive-trip photography supplied by JD.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-tile gallery-tile--wide gallery-tile--tall">
+            <img src="images/cave-view-of-bay.jpg" loading="lazy"
+              alt="View of the turquoise bay and a small boat framed by a coastal rock arch near Padre Burgos">
+            <div class="gallery-label">Sogod Bay, framed by the coastline</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/room-twin-beds.jpg" loading="lazy"
+              alt="Twin-bed guest room with air conditioning at JD Beach Front Hotel">
+            <div class="gallery-label">Guest room</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/turtle-closeup.jpg" loading="lazy"
+              alt="Close-up of a sea turtle swimming over a shallow reef">
+            <div class="gallery-label">Sea turtle encounters</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/coral-fan.jpg" loading="lazy"
+              alt="A large golden sea fan coral on the reef near Padre Burgos">
+            <div class="gallery-label">Coral garden</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/cliff-cove-benches.jpg" loading="lazy"
+              alt="A rocky cove with a rope swing and bamboo benches near Padre Burgos">
+            <div class="gallery-label">Nearby cliff cove</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/divers-with-turtle.jpg" loading="lazy"
+              alt="Divers following a hawksbill sea turtle across the reef">
+            <div class="gallery-label">Reef diving</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/cave-formations.jpg" loading="lazy"
+              alt="Limestone stalactite formations inside a nearby cave">
+            <div class="gallery-label">Nearby cave system</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/shoreline-cliff-edge.jpg" loading="lazy"
+              alt="Clear turquoise water along a limestone shoreline">
+            <div class="gallery-label">Coastline near Padre Burgos</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/forest-trekking-group.jpg" loading="lazy"
+              alt="A group of trekkers walking through the forest on the way to a nearby cave">
+            <div class="gallery-label">Forest trekking</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/soft-coral-reef.jpg" loading="lazy"
+              alt="A slope covered in soft coral on the reef near Padre Burgos">
+            <div class="gallery-label">Reef slope</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/bathroom-a.jpg" loading="lazy"
+              alt="En-suite bathroom with hot shower at JD Beach Front Hotel">
+            <div class="gallery-label">En-suite bathroom</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/room-single-bed-a.jpg" loading="lazy"
+              alt="A single-bed guest room with air conditioning and TV">
+            <div class="gallery-label">Guest room</div>
+          </div>
+
+          <div class="gallery-tile gallery-tile--wide">
+            <img src="images/floating-cottage-reef.jpg" loading="lazy"
+              alt="A floating bamboo cottage over clear turquoise water near Padre Burgos">
+            <div class="gallery-label">Floating cottage on the bay</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/rope-swing-group.jpg" loading="lazy"
+              alt="A group of guests linking hands in the water below a rope swing at a cliff cove">
+            <div class="gallery-label">Cliff cove rope swing</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/baby-turtles-hatchlings.jpg" loading="lazy"
+              alt="Two sea turtle hatchlings making their way across the sand">
+            <div class="gallery-label">Turtle hatchlings</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/sunset-palms.jpg" loading="lazy"
+              alt="Sunset over the water with silhouetted palm trees near Padre Burgos">
+            <div class="gallery-label">Sunset over Sogod Bay</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/beachview-from-deck.jpg" loading="lazy"
+              alt="View of the calm bay and passing boats from JD's waterfront deck">
+            <div class="gallery-label">View from JD's deck</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/cliff-cove-boat.jpg" loading="lazy"
+              alt="An outrigger boat anchored below a cliff in clear turquoise water">
+            <div class="gallery-label">Nearby cove</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/guests-tricycle-arrival.jpg" loading="lazy"
+              alt="Guests riding a tricycle with luggage on the way to JD">
+            <div class="gallery-label">Arriving in Padre Burgos</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/reef-fish-wreck.jpg" loading="lazy"
+              alt="Small reef fish swimming around an underwater structure">
+            <div class="gallery-label">Reef life</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/reef-fish-structure.jpg" loading="lazy"
+              alt="A school of reef fish around an underwater frame">
+            <div class="gallery-label">Underwater reef structure</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/reef-fish-pipe.jpg" loading="lazy"
+              alt="A reef fish sheltering inside a coral-covered pipe">
+            <div class="gallery-label">Reef detail</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/reef-growth-wreck.jpg" loading="lazy"
+              alt="Marine growth and fish around an underwater structure">
+            <div class="gallery-label">Underwater habitat</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/cliff-cove-path.jpg" loading="lazy"
+              alt="Rocky coastal cove with a narrow path and clear water">
+            <div class="gallery-label">Coastal cove</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/forest-trail-group.jpg" loading="lazy"
+              alt="Visitors walking a tropical forest trail">
+            <div class="gallery-label">Tropical trail</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/cave-entrance.jpg" loading="lazy"
+              alt="Visitor at the entrance to a nearby cave">
+            <div class="gallery-label">Cave entrance</div>
+          </div>
+
+          <div class="gallery-tile gallery-tile--wide">
+            <img src="images/clear-water-coast.jpg" loading="lazy"
+              alt="Clear shallow turquoise water along a limestone coast">
+            <div class="gallery-label">Clear coastal water</div>
+          </div>
+
+          <div class="gallery-tile gallery-tile--wide">
+            <img src="images/property-exterior.jpg" loading="lazy"
+              alt="JD Beach Front Hotel beside the water with palm trees along the shoreline">
+            <div class="gallery-label">JD Beach Front Hotel</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/property-deck-a.jpg" loading="lazy"
+              alt="Covered waterfront dining and seating area at JD Beach Front Hotel">
+            <div class="gallery-label">Waterfront deck</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/property-deck-b.jpg" loading="lazy"
+              alt="Tables and seating along JD's covered waterfront deck">
+            <div class="gallery-label">Relax by the water</div>
+          </div>
+
+          <div class="gallery-tile gallery-tile--wide">
+            <img src="images/bay-panorama.jpg" loading="lazy"
+              alt="Wide panoramic view across calm Sogod Bay under a bright blue sky">
+            <div class="gallery-label">Sogod Bay panorama</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/beachfront-shallows.jpg" loading="lazy"
+              alt="Clear shallow water directly beside the waterfront property">
+            <div class="gallery-label">Clear beachfront shallows</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/room-single-bed-b.jpg" loading="lazy"
+              alt="Single-bed guest room at JD Beach Front Hotel">
+            <div class="gallery-label">Single-bed room</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/room-twin-beds-b.jpg" loading="lazy"
+              alt="Twin-bed guest room at JD Beach Front Hotel">
+            <div class="gallery-label">Twin-bed room</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/whaleshark-group-aerial.jpg" loading="lazy"
+              alt="Several whale sharks swimming around a small outrigger boat">
+            <div class="gallery-label">Whale shark encounter</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/bathroom-b.jpg" loading="lazy"
+              alt="Clean private bathroom with shower at JD Beach Front Hotel">
+            <div class="gallery-label">Private bathroom</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/grilled-fish-meal.jpg" loading="lazy"
+              alt="Simple grilled fish meal served at JD Beach Front Hotel">
+            <div class="gallery-label">Fresh meal</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/sunset-palms.jpg" loading="lazy"
+              alt="Sunset view over the sea with palm silhouettes">
+            <div class="gallery-label">Sunset by the bay</div>
+          </div>
+
+          <div class="gallery-tile">
+            <img src="images/baby-turtle-hand.jpg" loading="lazy"
+              alt="A baby sea turtle being held gently in a person's hand">
+            <div class="gallery-label">Baby sea turtle</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="getting-here" class="section section--white" aria-labelledby="location-title">
+      <div class="container location-grid">
+        <div class="location-card">
+          <p class="eyebrow">Getting Here</p>
+          <h2 id="location-title">Padre Burgos, Without the Guesswork</h2>
+
+          <p>
+            JD Beach Front Hotel is located in Sta. Sofia, Padre Burgos, Southern
+            Leyte.
+          </p>
+
+          <address>
+            JD Beach Front Hotel<br>
+            Sta. Sofia<br>
+            Padre Burgos, Southern Leyte<br>
+            Philippines 6602
+          </address>
+
+          <a
+            class="btn btn--primary"
+            href="https://www.google.com/maps/search/?api=1&query=JD+Beach+Front+Hotel+Sta.+Sofia+Padre+Burgos+Southern+Leyte"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Directions
+          </a>
+
+          <div class="detail-note" style="background:rgba(255,255,255,.08); color:#d7e3e5; border-left-color:#e87555;">
+            Parking, transfers, recommended arrival routes and local transport
+            details still need business-owner confirmation.
+          </div>
+        </div>
+
+        <div class="location-art" aria-label="Stylized map placeholder">
+          <svg class="map-lines" viewBox="0 0 800 600" aria-hidden="true" preserveAspectRatio="none">
+            <rect width="800" height="600" fill="#e8ddc8"/>
+            <path d="M-50 100 C150 60 180 180 350 150 C520 120 600 40 850 90" fill="none" stroke="#c4b798" stroke-width="14"/>
+            <path d="M100 -20 C145 125 85 250 180 340 C260 415 330 360 380 620" fill="none" stroke="#f8f6f1" stroke-width="28"/>
+            <path d="M100 -20 C145 125 85 250 180 340 C260 415 330 360 380 620" fill="none" stroke="#b9ad92" stroke-width="3"/>
+            <path d="M400 -50 C420 130 550 220 520 380 C490 495 620 515 760 650" fill="none" stroke="#f8f6f1" stroke-width="24"/>
+            <path d="M400 -50 C420 130 550 220 520 380 C490 495 620 515 760 650" fill="none" stroke="#b9ad92" stroke-width="3"/>
+            <path d="M0 480 C180 450 330 520 520 455 C650 410 730 440 830 400" fill="none" stroke="#92b9b6" stroke-width="80" opacity=".7"/>
+          </svg>
+
+          <div class="map-pin" aria-hidden="true"><span>JD</span></div>
+
+          <div class="location-note">
+            Map-style placeholder for the client demo. The published site should
+            embed or link the verified property map location and include confirmed
+            arrival guidance.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section--sand" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">Simple direct inquiry</p>
+          <h2 id="process-title">Checking Your Dates Is Simple</h2>
+          <p class="lead">
+            Start with your travel dates and guest details. JD can then let you know
+            what accommodation is available and what comes next.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <span>STEP 01</span>
+            <h3>Send Your Stay Details</h3>
+            <p>
+              Share your dates, number of guests, preferred room if known, and
+              contact number.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span>STEP 02</span>
+            <h3>JD Confirms Availability</h3>
+            <p>
+              The exact response channel and expected response process still need
+              to be confirmed.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span>STEP 03</span>
+            <h3>Review Booking Details</h3>
+            <p>
+              JD can provide the available option, current rate and reservation
+              requirements.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <span>STEP 04</span>
+            <h3>Confirm Your Stay</h3>
+            <p>
+              Payment, deposit, cancellation and final confirmation procedures
+              remain to be documented.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faqs" class="section section--white" aria-labelledby="faq-title">
+      <div class="container faq-wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Before you reserve</p>
+          <h2 id="faq-title">Frequently Asked Questions</h2>
+          <p class="lead">
+            Practical answers for planning a stay at JD Beach Front Hotel.
+          </p>
+        </div>
+
+        <details class="faq-item">
+          <summary>Where is JD Beach Front Hotel?</summary>
+          <div class="faq-answer">
+            <p>
+              JD Beach Front Hotel is in Sta. Sofia, Padre Burgos, Southern Leyte,
+              Philippines 6602.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is JD directly on the beachfront?</summary>
+          <div class="faq-answer">
+            <p>
+              JD is described in the supplied business information as beachfront
+              accommodation, with a marine sanctuary directly in front of the property.
+            </p>
+            <p class="pending-inline">
+              The exact shoreline access arrangement still needs confirmation.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What types of rooms are available?</summary>
+          <div class="faq-answer">
+            <p>
+              Room types, bed configurations, capacities, bathrooms and
+              room-specific amenities have not yet been confirmed for publication.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How much does a room cost?</summary>
+          <div class="faq-answer">
+            <p>
+              Current room rates have not yet been supplied. The final site should
+              publish current rates or useful rate guidance whenever operationally
+              practical.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How do I check whether my dates are available?</summary>
+          <div class="faq-answer">
+            <p>
+              Use the Check Availability form below and provide your dates, guest
+              count, preferred room if known, name, mobile number and optional message.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is breakfast included with the room?</summary>
+          <div class="faq-answer">
+            <p>
+              Breakfast and food service are available, but whether breakfast is
+              included in particular room rates has not been confirmed.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is Wi-Fi available?</summary>
+          <div class="faq-answer">
+            <p>
+              Yes. Wi-Fi is listed among JD’s available amenities and is also
+              mentioned in supplied guest feedback.
+            </p>
+            <p class="pending-inline">
+              Coverage and performance details still need confirmation.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does JD have air-conditioned rooms?</summary>
+          <div class="faq-answer">
+            <p>
+              Air conditioning is specifically mentioned in supplied guest feedback.
+              Which room categories include it still needs to be confirmed.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is JD suitable for freedivers?</summary>
+          <div class="faq-answer">
+            <p>
+              JD is positioned as freediver-friendly, and the supplied business
+              information states that a marine sanctuary is directly in front of the property.
+            </p>
+            <p>
+              Specific freediver facilities, water access, equipment arrangements,
+              local partners and safety information still need confirmation.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can families stay at JD?</summary>
+          <div class="faq-answer">
+            <p>
+              Families are included in JD’s supplied target customer profile.
+              Room capacities, children’s policies, extra beds and family-specific
+              arrangements still need confirmation.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What time are check-in and check-out?</summary>
+          <div class="faq-answer">
+            <p>Check-in and check-out times still need business-owner confirmation.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is a deposit required and what is the cancellation policy?</summary>
+          <div class="faq-answer">
+            <p>
+              Deposit, payment and cancellation requirements have not yet been
+              supplied and should be confirmed before publication.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is parking or transportation assistance available?</summary>
+          <div class="faq-answer">
+            <p>
+              Parking, transportation and transfer arrangements have not yet been
+              confirmed.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How can I contact JD directly?</summary>
+          <div class="faq-answer">
+            <p>
+              Call <a class="text-link" href="tel:+639177231620">+63 917 723 1620</a>.
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- AVAILABILITY -->
+    <section id="availability" class="section section--dark" aria-labelledby="availability-title">
+      <div class="container availability-grid">
+        <div class="availability-copy">
+          <p class="eyebrow">Direct availability inquiry</p>
+          <h2 id="availability-title">Ready to Check Your Dates?</h2>
+
+          <p class="lead">
+            Tell JD when you’re planning to visit and how many people are staying.
+            You can then find out what accommodation is available before taking the
+            next step with your reservation.
+          </p>
+
+          <div class="availability-contact">
+            <a href="tel:+639177231620">
+              <span aria-hidden="true">☎</span>
+              Call +63 917 723 1620
+            </a>
+            <a href="sms:+639177231620">
+              <span aria-hidden="true">✉</span>
+              Send a mobile message
+            </a>
+          </div>
+        </div>
+
+        <form id="availability-form" class="form-shell" novalidate>
+          <h3>Check Availability</h3>
+          <p class="form-intro">
+            Enter your stay details below. No payment information is requested.
+          </p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="checkin">Check-in date</label>
+              <input id="checkin" name="checkin" type="date" required>
+              <span class="field-error">Choose a check-in date.</span>
+            </div>
+
+            <div class="field">
+              <label for="checkout">Check-out date</label>
+              <input id="checkout" name="checkout" type="date" required>
+              <span class="field-error">Choose a check-out date after check-in.</span>
+            </div>
+
+            <div class="field">
+              <label for="guests">Number of guests</label>
+              <input
+                id="guests"
+                name="guests"
+                type="number"
+                min="1"
+                step="1"
+                inputmode="numeric"
+                placeholder="2"
+                required
+              >
+              <span class="field-error">Enter at least 1 guest.</span>
+            </div>
+
+            <div class="field">
+              <label for="room">Preferred room</label>
+              <select id="room" name="room">
+                <option value="">Not sure / ask JD</option>
+                <option value="room-to-confirm">
+                  Room options to be confirmed
+                </option>
+              </select>
+              <span class="field-help">
+                Specific room categories will be added once confirmed.
+              </span>
+            </div>
+
+            <div class="field field--full">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Your name"
+                required
+              >
+              <span class="field-error">Enter your name.</span>
+            </div>
+
+            <div class="field field--full">
+              <label for="phone">Mobile / WhatsApp number</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                inputmode="tel"
+                placeholder="+63 ..."
+                required
+              >
+              <span class="field-error">Enter a phone number JD can use to contact you.</span>
+            </div>
+
+            <div class="field field--full">
+              <label for="message">Optional message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Anything JD should know about your stay?"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <button class="btn btn--primary btn--full" type="submit">
+              Send Availability Request
+            </button>
+
+            <p class="form-note">
+              Client demo: this form currently has no booking backend and does not
+              transmit guest information. Connect it to JD’s confirmed reservation
+              workflow before publishing.
+            </p>
+
+            <div id="form-message" class="form-message" role="status" aria-live="polite">
+              Demo only — your inquiry has not been sent. The form UI is ready to
+              connect to JD Beach Front Hotel’s confirmed booking or messaging workflow.
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>JD Beach Front Hotel</h3>
+          <p>
+            Beachfront accommodation in Padre Burgos, Southern Leyte.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-title">Explore</div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms &amp; Rates</a>
+            <a href="#reef">Freediving &amp; The Reef</a>
+            <a href="#food">Food &amp; Breakfast</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#getting-here">Getting Here</a>
+            <a href="#faqs">FAQs</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Reservations</div>
+          <div class="footer-links">
+            <a href="#availability">Check Availability</a>
+            <a href="tel:+639177231620">Call +63 917 723 1620</a>
+            <a href="sms:+639177231620">Send a message</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-title">Visit &amp; Follow</div>
+          <div class="footer-links">
+            <span>Sta. Sofia</span>
+            <span>Padre Burgos, Southern Leyte</span>
+            <span>Philippines 6602</span>
+            <a
+              href="https://www.facebook.com/jdbeachfronthotel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          Booking terms, cancellation policy and privacy policy require confirmation
+          before publication.
+        </span>
+        <span class="creator">Created by Lendez Design</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" aria-label="Mobile reservation actions">
+    <a class="btn btn--primary" href="#availability">Check Availability</a>
+    <a
+      class="mobile-call"
+      href="tel:+639177231620"
+      aria-label="Call JD Beach Front Hotel"
+    >☎</a>
+  </div>
+
+  <script>
+    (() => {
+      const body = document.body;
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileMenu = document.querySelector("#mobile-menu");
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+
+      function closeMenu() {
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+        mobileMenu.classList.remove("open");
+        body.classList.remove("menu-open");
+      }
+
+      menuToggle.addEventListener("click", () => {
+        const open = menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute("aria-expanded", String(!open));
+        menuToggle.setAttribute(
+          "aria-label",
+          open ? "Open navigation" : "Close navigation"
+        );
+
+        mobileMenu.classList.toggle("open", !open);
+        body.classList.toggle("menu-open", !open);
+      });
+
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeMenu();
+      });
+
+      const form = document.querySelector("#availability-form");
+      const formMessage = document.querySelector("#form-message");
+      const checkin = document.querySelector("#checkin");
+      const checkout = document.querySelector("#checkout");
+      const guests = document.querySelector("#guests");
+      const name = document.querySelector("#name");
+      const phone = document.querySelector("#phone");
+
+      const today = new Date();
+      const localToday = new Date(
+        today.getTime() - today.getTimezoneOffset() * 60000
+      )
+        .toISOString()
+        .split("T")[0];
+
+      checkin.min = localToday;
+      checkout.min = localToday;
+
+      checkin.addEventListener("change", () => {
+        checkout.min = checkin.value || localToday;
+
+        if (checkout.value && checkout.value <= checkin.value) {
+          checkout.value = "";
+        }
+      });
+
+      function setFieldState(input, valid) {
+        const field = input.closest(".field");
+        field.classList.toggle("has-error", !valid);
+        input.setAttribute("aria-invalid", String(!valid));
+      }
+
+      function validate() {
+        const validCheckin = Boolean(checkin.value);
+        const validCheckout =
+          Boolean(checkout.value) &&
+          Boolean(checkin.value) &&
+          checkout.value > checkin.value;
+
+        const validGuests =
+          guests.value !== "" &&
+          Number.isFinite(Number(guests.value)) &&
+          Number(guests.value) >= 1;
+
+        const validName = name.value.trim().length >= 2;
+        const validPhone =
+          phone.value.trim().replace(/[^\d]/g, "").length >= 7;
+
+        setFieldState(checkin, validCheckin);
+        setFieldState(checkout, validCheckout);
+        setFieldState(guests, validGuests);
+        setFieldState(name, validName);
+        setFieldState(phone, validPhone);
+
+        return (
+          validCheckin &&
+          validCheckout &&
+          validGuests &&
+          validName &&
+          validPhone
+        );
+      }
+
+      [checkin, checkout, guests, name, phone].forEach((input) => {
+        input.addEventListener("input", () => {
+          input.closest(".field").classList.remove("has-error");
+          input.removeAttribute("aria-invalid");
+          formMessage.classList.remove("show");
+        });
+      });
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        if (!validate()) {
+          const firstError = form.querySelector(".field.has-error input");
+          if (firstError) firstError.focus();
+          return;
+        }
+
+        formMessage.classList.add("show");
+        formMessage.scrollIntoView({
+          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ? "auto"
+            : "smooth",
+          block: "nearest"
+        });
+      });
+
+      const currentYear = new Date().getFullYear();
+      document
+        .querySelector(".footer-bottom")
+        .setAttribute("data-year", currentYear);
+    })();
+  </script>
+</body>
+</html>
